@@ -25,12 +25,12 @@ description per register.
 main operating modes of Timer_A and briefly explain each.
 
 8. (10 pts) Briefly state the purpose of the following Timer_A registers.
-• TAxCTL
-• TAxCCTLn
-• TAxR
-• TAxCCRn
-• TaxIV
-• TAxEX0
+• TAxCTL : Controls the Timer_A clock source, input divider, operating mode, timer clear, and interrupt enable and flag.
+• TAxCCTLn : Controls the capture/compare mode, input selection, output mode, and capture/compare interrupts.
+• TAxR : Holds the current count of Timer_A.
+• TAxCCRn : In compare mode, holds the data for comparison to the timer value in TAxR. In capture mode, stores the TAxR value when a capture is performed
+• TaxIV : Holds the Timer_A interrupt vector value, identifying the highest-priority pending interrupt source.
+• TAxEX0 : Controls the input divider expansion. The TAIDEX bits, along with the ID bits, select the divider for the input clock.
 
 9. (5 pts) What is PWM? Provide at least three example applications that use PWM in
 embedded systems.
