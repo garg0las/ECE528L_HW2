@@ -22,7 +22,7 @@ upward, what is the maximum count value before it rolls over? Show your work.
 
 2^16 = 65536
 
-5. (5 pts) If a 24-bit timer counts upward from zero at 10 MHz, what is its overflow
+4. (5 pts) If a 24-bit timer counts upward from zero at 10 MHz, what is its overflow
 period? Show your work.
 
 2^24/10,000,000 = 16,777,216/10,000,000 = 1.677s
