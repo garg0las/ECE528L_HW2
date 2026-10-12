@@ -3,9 +3,19 @@
 1. (5 pts) What is a hardware timer? What kinds of tasks do embedded systems commonly
 use hardware timers for?
 
+A hardware timer is a peripheral module that uses a clock source to increment or decrement a counter and measure time intervals.
+
 2. (5 pts) What is a clock signal used for in embedded systems? List the primary clock
 sources available on the MSP432P401R microcontroller and briefly describe each clock
 source.
+
+A clock signal can be used to generate a PWM signal and some primary clock sources are: 
+- ACLK (Auxiliary Clock): Software selectable as LFXTCLK, VLOCLK, or REFOCLK. Used by individual peripheral modules and limited to 128 kHz.
+- MCLK (Master Clock): Used by the CPU and peripheral module interfaces, as well as directly by some peripheral modules.
+- HSMCLK (Subsystem Master Clock): Software selectable from multiple clock sources and used by individual peripheral modules.
+- SMCLK (Low-Speed Subsystem Master Clock): Uses the HSMCLK clock resource selection but can be divided independently. Used by individual peripheral modules.
+- BCLK (Low-Speed Backup Domain Clock): Software selectable as LFXTCLK or REFOCLK and used primarily in the backup domain
+
 
 3. (5 pts) Consider a 16-bit timer (e.g. Timer_A configured in up mode). If it counts
 upward, what is the maximum count value before it rolls over? Show your work.
